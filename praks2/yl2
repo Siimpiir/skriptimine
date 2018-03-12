@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Siim Piir" #nimi
+echo "ISP117" #õppegrupp
+echo "Skriptimine on väga huvitav" #kuidas meeldib antud õppeaine
+echo "Arvan et olen päris kiire sellel alal" #sinu praegune mulje ja edasijõudmine
+
+
