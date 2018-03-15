@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -n "Tere " #v2ljastab k2su tere
+echo -n `whoami` #v2ljastab praeguse kasutaja nime
+echo "!"
