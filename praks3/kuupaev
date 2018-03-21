@@ -1,0 +1,7 @@
+#!/bin/bash
+echo -n "Tänane kuupäev on " #k2sk väljastab s6numi
+date  +"%A, %B %d, %Y" #k2sk väljastab täpse kuupäeva
+echo -n "Kell on " #k2sk väljastab s6numi
+date +"%H:%M" #k2sk väljastab täpse kellaaja
+cal #k2sk näitab tervet selle kuu kalendrit
+
