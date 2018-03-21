@@ -1,0 +1,2 @@
+#!/bin/bash
+find /var -name *.log | sort -n -r #otsib yles k6ik failid .log lõpuga ja sorteerib need
