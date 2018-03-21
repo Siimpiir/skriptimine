@@ -1,0 +1,4 @@
+#!/bin/bash
+echo -n "Sisesta oma ees- ja perenimi: "
+read eesnimi perenimi #jätab meelde ees ja perenime
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi" #asendab ees ja perenime eelnevalt kirjutatud asjadega
