@@ -1,0 +1,2 @@
+#!/bin/bash
+uptime -p #n2itab täpset aega kui kaua on masin töödanud
