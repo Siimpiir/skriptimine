@@ -1,0 +1,9 @@
+#!/bin/bash
+echo -n "kui palju on reisijaid: " #tuleb sisestada reisjate kogus
+read reisijad #j2tab meelde vastuse
+echo -n "Mitu istekohta on bussis?: "
+read kohad #j2tab meelde vastuse
+k6ik=`expr $kohad - $reisijad` #mitu inimest jäi maha
+taidetud=`expr $reisijad / $kohad` #mitu bussi t2ideti
+echo "Täis busse on $taidetud maha jäi $k6ik inimest" #l6ppvastus
+
