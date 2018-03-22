@@ -1,0 +1,11 @@
+#!/bin/bash
+echo -n "sisesta kolmnurga esimene külg "
+read a
+echo -n "sisesta kolmnurga teine kylg "
+read b
+a2=`expr $a \* $a` #arvutab a ruutu
+b2=`expr $a \* $b` #arvutab b ruutu
+c=`expr $a2 + $b2` #liidab a ja b ruudus
+echo -n "kolmnurga hüpotenuus on"
+echo "scale=$c;sqrt(2)"| bc #v6tab ruutjuure ja arvutab hüpoteesi pythoragese teoreemi abil
+
