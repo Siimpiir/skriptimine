@@ -1,0 +1,12 @@
+#!/bin/bash
+echo -n "mitu cm on aluse pikkus: "
+read pikkus
+echo -n "mitu cm on aluse laius: "
+read laius
+echo -n "mitme kihiline on tort: "
+read kihid
+echo -n "mitu sentimeetrit on ühe küpsisi külg: "
+read kupsis
+echo -n "kui mitu küpsist on pakkis: "
+read pakk
+echo "Vaja läheb `expr $pikkus \* $laius  / $kupsis \* $kupsis \* $kihid / $pakk` pakki"
