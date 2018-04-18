@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "millal sõidad ära: "
+read a
+echo "ööpäevade arv: "
+read b
+c=$(($b % 7)) #arvutab päevade arvu n2dalateks
+d=$(($a + $c)) #arvutab kuna tagasi
+echo "oled tagasi päeval $d"
