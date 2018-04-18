@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -n  "esimene külg: "
+read a
+echo -n "teine külg: "
+read b
+echo -n "kolmas külg: "
+read c
+u=`echo "scale=2;($a+$b+$c)/2" | bc` #arvutab ymberm66du
+p=`echo "scale=2;sqrt ($u*($u-$a)*($u-$b)*($u-$c))" | bc` #arvutab pindala
+echo "Kolmnurga pindala on: $p"
