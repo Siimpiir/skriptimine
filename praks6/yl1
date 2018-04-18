@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -n "sisesta suvaline arv"
+read a
+jaak=$(( $a % 2 ))
+if [ $jaak -eq 0 ]
+then
+   echo "$a on paaris"
+else
+   echo "$a on paaritu"
+fi
