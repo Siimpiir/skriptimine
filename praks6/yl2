@@ -1,0 +1,13 @@
+#!/bin/bash
+echo -n "Sisesta inimeste arv: "
+read inimesed #loeb inimeste arvu
+echo -n "sisesta kohtade arv bussis: "
+read kohad #loeb kohtade arvu
+bussid=$(($inimesed / $kohad)) #arvutab mitu bussi on vaja
+ylejaanud=$(($inimesed % $kohad)) #arvutab kas kedagi jääb ka üle
+if test $ylejaanud -gt 0
+then
+	bussid=$(($bussid + 1)) #arvutab, kui rohkem inimesi kui bussi mahub siis lisatakse veel 1 buss
+fi
+echo "kokku on vaja $bussid taisbussi" #annab lõppvastuse
+
