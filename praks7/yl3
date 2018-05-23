@@ -1,0 +1,18 @@
+#!/bin/bash
+echo -n "Sisesta kellaaeg: "
+read aeg
+if test $aeg -gt 6 -a $aeg -lt 12
+then
+echo "Tere hommikust!"
+elif test $aeg -ge 12 -a $aeg -lt 18
+then
+echo "Tere paevast!"
+elif test $aeg -ge 18 -a $aeg -lt 22
+then
+echo "Tere ohtust!"
+elif [ $aeg -ge 23 -a $aeg -lt 24 ] || [ $aeg -gt 0 -a $aeg -le 6 ]
+then
+echo "Head ood!"
+else
+echo "Vigane sisend"
+fi
